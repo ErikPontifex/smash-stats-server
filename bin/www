@@ -32,8 +32,8 @@ server.on('error', onError);
 server.on('listening', onListening);
 
 // var rule = new schedule.RecurrenceRule();
-// rule.hour = 20;
-// rule.minute = 14;
+// rule.hour = 11;
+// rule.minute = 46;
 
 // schedule.scheduleJob(rule, function(){
 //   console.log('going to update the db');

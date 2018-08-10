@@ -44,7 +44,7 @@ exports.player_search = function(req, res) {
     let term = req.params.term ? req.params.term : '';
     Player.find({gamerTag:{ $regex: "^" + term, $options: "i"}})
             .limit(200)
-            .select({gamerTag:1, playerID: 1})
+            .select({gamerTag:1, playerID: 1, name: 1})
             .sort({gamerTag: 1})
             .exec(function(err, docs){
                     if (err) throw err;
