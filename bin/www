@@ -31,14 +31,14 @@ server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
 
-var rule = new schedule.RecurrenceRule();
-rule.hour = 3;
-rule.minute = 0;
+// var rule = new schedule.RecurrenceRule();
+// rule.hour = 20;
+// rule.minute = 14;
 
-schedule.scheduleJob(rule, function(){
-  console.log('going to update the db');
-  updateDB();
-});
+// schedule.scheduleJob(rule, function(){
+//   console.log('going to update the db');
+//   updateDB();
+// });
 
 
 /**
